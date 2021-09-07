@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Debates
-permalink: /about/
+permalink: /debates/
 ---
 
 Update 1This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
@@ -57,4 +57,53 @@ You can find the source code for Jekyll at GitHub:
         };
         var userList = new List('repos', options);
 
+</script>
+
+<div id="cy"/>
+
+<script type="module">
+import cytoscape from "{{ site.baseurl }}{% link assets/js/cytoscape.esm.min.js %}"; //./assets/js/cytoscape.esm.min.js";
+var cy = cytoscape({
+
+  container: document.getElementById('cy'), // container to render in
+
+  elements: [ // list of graph elements to start with
+    { // node a
+      data: { id: 'a' }
+    },
+    { // node b
+      data: { id: 'b' }
+    },
+    { // edge ab
+      data: { id: 'ab', source: 'a', target: 'b' }
+    }
+  ],
+
+  style: [ // the stylesheet for the graph
+    {
+      selector: 'node',
+      style: {
+        'background-color': '#666',
+        'label': 'data(id)'
+      }
+    },
+
+    {
+      selector: 'edge',
+      style: {
+        'width': 3,
+        'line-color': '#ccc',
+        'target-arrow-color': '#ccc',
+        'target-arrow-shape': 'triangle',
+        'curve-style': 'bezier'
+      }
+    }
+  ],
+
+  layout: {
+    name: 'grid',
+    rows: 1
+  }
+
+});
 </script>
