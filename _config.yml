@@ -18,13 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Pollicy
+email: shannonbay@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Pollicy is a new thing. Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-#baseurl: "" # the subpath of your site, e.g. /blog
+  Pollicy is a new thing. An open-source search for truth; a platform for fair and balanced discussion without the noise, ego and narrative control.  Explore and update a versioned debate.  Mind-map of statements which support, oppose or rebut the moot, complete with citations! All statements are explicitly tagged as positive (factual, objective, descriptive) or normative (opinion, subjective or values-based).
+  Every change is committed to the repository, but must pass A/B polling to confirm it enhances the debate.  An unpopular new sentiment only needs 30% upvotes to enter the main branch, while edits require  60% or more.
+  Anyone may create a new debate or even clone an existing one.  Pollicy continually scans github for new debates to list in it's explorer.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
